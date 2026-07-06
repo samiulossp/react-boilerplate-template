@@ -1,3 +1,5 @@
+Project Structure (3)
+
 react-boilerplate/
 │
 ├── public/
@@ -101,3 +103,27 @@ react-boilerplate/
 ├── package.json
 ├── vite.config.js
 └── README.md# react-boilerplate-template
+
+Project Structure (2)
+
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+│
+├── layouts/
+│   └── MainLayout.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Blog.jsx
+│   ├── Contact.jsx
+│   └── NotFound.jsx
+│
+├── routes/
+│   └── AppRouter.jsx
+│
+├── App.jsx
+└── main.jsx

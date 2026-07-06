@@ -1,25 +1,12 @@
-import Navbar from "@/components/layout/Navbar";
+import MainLayout from "@/layouts/MainLayout";
+import router from "@/routes/AppRouter";
+import { RouterProvider } from "react-router-dom";
 
-
-function App() {
-  
-
-  const start = () => {
-    intervalRef.current = setInterval(() => {
-      setCount((prev) => prev + 1);
-    }, 1000);
-  };
-
-  const stop = () => {
-    clearInterval(intervalRef.current);
-  };
-
+export default function App() {
   return (
-    <div>
-      <Navbar />
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
-export default App;
